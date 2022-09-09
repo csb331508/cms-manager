@@ -1,0 +1,132 @@
+@import '~antd/dist/antd.css';
+// @bgcolor : white;
+
+body {
+  font-size          : 14px;
+  color              : #333;
+  font-family        : "微软雅黑";
+  // background-color: @bgcolor;
+}
+
+#app {
+  height: 100vh;
+}
+
+.header {
+  // width: 100%;
+  background-color   : #fff;
+  height             : 70px;
+  display            : flex;
+  justify-content    : space-between;
+  align-items        : center;
+  padding            : 0 20px;
+  // position        : relative;
+
+  .right {
+    // position: relative;
+    // height  : 40px;
+
+    .avatar {
+      width        : 40px;
+      height       : 40px;
+      border-radius: 50%;
+      // display: block;
+      padding      : 20 px;
+
+    }
+
+    .dropDown {
+      padding: 0 10px 20px;
+      color  : #333;
+
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  }
+
+}
+
+.container {
+  display        : flex;
+  justify-content: space-between;
+
+
+  .container_box {
+    padding            : 20px;
+    display            : flex;
+    flex-flow          : column nowrap;
+    height             : 100%;
+    flex               : 1;
+    background-color   : rgb(240, 242, 245);
+    // background-color: #bfa;
+
+    // 面包屑内样式
+    .bread_name {
+
+      // background-color: red;
+      span {
+        height     : 30px;
+        line-height: 30px;
+        color      : rgba(0, 0, 0, .4);
+      }
+    }
+
+    .container_content {
+      height             : calc(100vh - 212px);
+      overflow           : hidden;
+      overflow-y         : scroll;
+      // flex            : 1;
+      background-color   : #fff;
+      border-radius      : 10px;
+      padding: 10px;
+
+      &::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width        : 10px;
+        height       : 100%;
+        background   : #fff;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background   : #EDEDED;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius: 10px;
+        box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background   : #535353;
+      }
+
+
+    }
+
+    span {
+      // color: rgba(0, 0, 0, .7);
+    }
+  }
+
+  .aside {
+    height          : calc(100vh - 140px);
+    background-color: #001529;
+    color           : #fff;
+  }
+
+  // .content{
+
+  // }
+}
+
+
+.footer {
+  color : #fff;
+  height: 70px;
+
+  background-color: #001529;
+  text-align      : center;
+}
